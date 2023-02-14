@@ -49,7 +49,6 @@ public class Car {
                     fuelСonsumption();
                     if (fuel / ((consumptionFuel/100)) >= distance){
                         System.out.printf("Дистанция: %s, расход: %s, в баке %s ", distance, consumptionFuel, fuel);
-                        //System.out.println(consumptionFuel+ "djn");
                         autoBrokenStatus();
                         if (!broken) {
                             System.out.println("Вы успешно приехали! ");
@@ -70,7 +69,6 @@ public class Car {
     public void autoBrokenStatus(){
         Random random = new Random();
         int res = random.nextInt(0,3);
-        //System.out.println(res);
         if (res == 1) {
             broken = true;
         }else{
@@ -80,7 +78,6 @@ public class Car {
     public void fuelСonsumption(){
         Random random = new Random();
         consumptionFuel = random.nextInt(2,31);
-        //System.out.println(consumptionFuel);
     }
     
 }
